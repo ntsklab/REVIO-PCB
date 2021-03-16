@@ -1,0 +1,300 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "REVIO"
+Date "2021-03-16"
+Rev "r2"
+Comp "NTSK-Lab"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C_Small C5
+U 1 1 604E0124
+P 6400 1200
+F 0 "C5" H 6492 1246 50  0000 L CNN
+F 1 "C_Small" H 6492 1155 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 6400 1200 50  0001 C CNN
+F 3 "~" H 6400 1200 50  0001 C CNN
+	1    6400 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 604E0532
+P 5750 3650
+F 0 "C4" H 5842 3696 50  0000 L CNN
+F 1 "C_Small" H 5842 3605 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 5750 3650 50  0001 C CNN
+F 3 "~" H 5750 3650 50  0001 C CNN
+	1    5750 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 604E0AF7
+P 5750 1850
+F 0 "C3" H 5842 1896 50  0000 L CNN
+F 1 "C_Small" H 5842 1805 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 5750 1850 50  0001 C CNN
+F 3 "~" H 5750 1850 50  0001 C CNN
+	1    5750 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 604E1B41
+P 5000 1900
+F 0 "C1" H 5092 1946 50  0000 L CNN
+F 1 "C_Small" H 5092 1855 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 5000 1900 50  0001 C CNN
+F 3 "~" H 5000 1900 50  0001 C CNN
+	1    5000 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L MCU_Module:Arduino_Nano_v3.x Nano1
+U 1 1 604E4449
+P 6450 4700
+F 0 "Nano1" V 6404 3657 50  0000 R CNN
+F 1 "Arduino_Nano_v3.x" V 6495 3657 50  0000 R CNN
+F 2 "Module:Arduino_Nano" H 6450 4700 50  0001 C CIN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 6450 4700 50  0001 C CNN
+	1    6450 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7200 3500 7200 3850
+Wire Wire Line
+	7200 3850 7050 3850
+Wire Wire Line
+	7050 3850 7050 4200
+Wire Wire Line
+	6950 4200 6950 3850
+Wire Wire Line
+	6950 3850 6800 3850
+Wire Wire Line
+	6800 3850 6800 3500
+Wire Wire Line
+	7700 2700 7700 2000
+Wire Wire Line
+	7700 1500 6950 1500
+Wire Wire Line
+	6800 1900 6800 1650
+Wire Wire Line
+	6800 1650 7150 1650
+Wire Wire Line
+	7200 1900 7200 1750
+Wire Wire Line
+	7200 1750 7050 1750
+Wire Wire Line
+	5850 1850 5900 1850
+Wire Wire Line
+	5900 1850 5900 1900
+Wire Wire Line
+	5650 1850 5600 1850
+Wire Wire Line
+	5600 1850 5600 1900
+Wire Wire Line
+	5600 3500 5600 3650
+Wire Wire Line
+	5600 3650 5650 3650
+Wire Wire Line
+	5850 3650 5900 3650
+Wire Wire Line
+	5900 3650 5900 3500
+Wire Wire Line
+	6500 1200 7700 1200
+Wire Wire Line
+	7700 1200 7700 1500
+Connection ~ 7700 1500
+Wire Wire Line
+	6300 1200 5300 1200
+Wire Wire Line
+	5300 1200 5300 2700
+Wire Wire Line
+	6400 1800 6400 1900
+Wire Wire Line
+	5400 2000 7700 2000
+Connection ~ 7700 2000
+Wire Wire Line
+	7700 2000 7700 1500
+Connection ~ 7700 2700
+$Comp
+L Interface_UART:ADM232A ADM232
+U 1 1 604E2454
+P 6500 2700
+F 0 "ADM232" V 6546 1456 50  0000 R CNN
+F 1 "ADM232A" V 6455 1456 50  0000 R CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 6550 1650 50  0001 L CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADM222_232A_242.pdf" H 6500 2800 50  0001 C CNN
+	1    6500 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 604E1289
+P 5400 1900
+F 0 "C2" H 5492 1946 50  0000 L CNN
+F 1 "C_Small" H 5492 1855 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 5400 1900 50  0001 C CNN
+F 3 "~" H 5400 1900 50  0001 C CNN
+	1    5400 1900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5400 1800 6400 1800
+Wire Wire Line
+	5000 1800 5000 1650
+Wire Wire Line
+	5000 1650 6100 1650
+Wire Wire Line
+	6100 1650 6100 1900
+Wire Wire Line
+	5000 2000 5000 2700
+Wire Wire Line
+	5000 2700 5300 2700
+Connection ~ 5300 2700
+Wire Wire Line
+	7150 900  7150 1650
+Wire Wire Line
+	7050 900  7050 1750
+Wire Wire Line
+	6950 900  6950 1500
+$Comp
+L Switch:SW_Push TEST1
+U 1 1 6051A723
+P 5150 5500
+F 0 "TEST1" H 5150 5785 50  0000 C CNN
+F 1 "SW_Push" H 5150 5694 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" H 5150 5700 50  0001 C CNN
+F 3 "~" H 5150 5700 50  0001 C CNN
+	1    5150 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 5500 5350 4700
+Wire Wire Line
+	5350 4700 5450 4700
+Wire Wire Line
+	4950 5500 4950 4050
+Wire Wire Line
+	4950 4050 6450 4050
+Wire Wire Line
+	6450 4050 6450 4200
+$Comp
+L power:+5V #PWR01
+U 1 1 6051C8A9
+P 3700 3000
+F 0 "#PWR01" H 3700 2850 50  0001 C CNN
+F 1 "+5V" H 3715 3173 50  0000 C CNN
+F 2 "" H 3700 3000 50  0001 C CNN
+F 3 "" H 3700 3000 50  0001 C CNN
+	1    3700 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 6051D19A
+P 3700 3700
+F 0 "#PWR02" H 3700 3450 50  0001 C CNN
+F 1 "GND" H 3705 3527 50  0000 C CNN
+F 2 "" H 3700 3700 50  0001 C CNN
+F 3 "" H 3700 3700 50  0001 C CNN
+	1    3700 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 2700 4000 3000
+Connection ~ 5000 2700
+Wire Wire Line
+	5000 2700 4000 2700
+Wire Wire Line
+	5250 3000 5250 3800
+Wire Wire Line
+	5250 3800 7650 3800
+Wire Wire Line
+	7650 3800 7650 4900
+Wire Wire Line
+	7650 4900 7450 4900
+Wire Wire Line
+	3700 3000 4000 3000
+Connection ~ 4000 3000
+Wire Wire Line
+	4000 3000 5250 3000
+Wire Wire Line
+	4650 3700 4650 4800
+Wire Wire Line
+	7700 3700 7700 2700
+Wire Wire Line
+	3700 3700 3800 3700
+Connection ~ 4650 3700
+Wire Wire Line
+	4650 3700 7700 3700
+NoConn ~ 6600 3500
+NoConn ~ 7000 3500
+NoConn ~ 7000 1900
+NoConn ~ 6600 1900
+NoConn ~ 5750 4200
+NoConn ~ 5850 4200
+NoConn ~ 5950 4200
+NoConn ~ 6050 4200
+NoConn ~ 6150 4200
+NoConn ~ 6250 4200
+NoConn ~ 6350 4200
+NoConn ~ 6550 4200
+NoConn ~ 6650 4200
+NoConn ~ 6750 4200
+NoConn ~ 6850 4200
+NoConn ~ 7450 4600
+NoConn ~ 7450 4800
+NoConn ~ 7050 5200
+NoConn ~ 6950 5200
+NoConn ~ 6650 5200
+NoConn ~ 6450 5200
+NoConn ~ 6350 5200
+NoConn ~ 6250 5200
+NoConn ~ 6150 5200
+NoConn ~ 6050 5200
+NoConn ~ 5950 5200
+NoConn ~ 5850 5200
+NoConn ~ 5750 5200
+Wire Wire Line
+	4650 4800 5450 4800
+$Comp
+L Connector_Generic:Conn_01x03 XH_ToNu1
+U 1 1 60565F54
+P 7050 700
+F 0 "XH_ToNu1" V 7014 512 50  0000 R CNN
+F 1 "Conn_01x03" V 6923 512 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical" H 7050 700 50  0001 C CNN
+F 3 "~" H 7050 700 50  0001 C CNN
+	1    7050 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_Coaxial_Power DC5V1
+U 1 1 6056A997
+P 3800 3250
+F 0 "DC5V1" H 3888 3246 50  0000 L CNN
+F 1 "Conn_Coaxial_Power" H 3888 3155 50  0000 L CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 3800 3200 50  0001 C CNN
+F 3 "~" H 3800 3200 50  0001 C CNN
+	1    3800 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3000 4000 3150
+Wire Wire Line
+	4000 3150 3800 3150
+Wire Wire Line
+	4650 3700 3800 3700
+Wire Wire Line
+	3800 3700 3800 3450
+Connection ~ 3800 3700
+$EndSCHEMATC

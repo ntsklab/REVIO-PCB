@@ -1,0 +1,10 @@
+Reference, Value, Footprint, Datasheet
+"C5","C_Small","Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm","~"
+"C4","C_Small","Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm","~"
+"C3","C_Small","Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm","~"
+"C1","C_Small","Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm","~"
+"A1","Arduino_Nano_v3.x","Module:Arduino_Nano","http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf"
+"J1","Conn_01x03_Male","Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal","~"
+"U1","ADM232A","Package_DIP:DIP-16_W7.62mm","https://www.analog.com/media/en/technical-documentation/data-sheets/ADM222_232A_242.pdf"
+"C2","C_Small","Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm","~"
+"SW1","SW_Push","Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx","~"

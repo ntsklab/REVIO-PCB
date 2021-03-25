@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "cbRev-IO-Emu"
-Date "2021-03-11"
-Rev "r1"
+Title "REVIO"
+Date "2021-03-25"
+Rev "r3"
 Comp "NTSK-Lab"
 Comment1 ""
 Comment2 ""
@@ -952,4 +952,16 @@ Wire Wire Line
 Wire Wire Line
 	2100 5800 2100 5950
 Connection ~ 2450 5800
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 6092E336
+P 2250 4350
+F 0 "#FLG0102" H 2250 4425 50  0001 C CNN
+F 1 "PWR_FLAG" H 2250 4523 50  0000 C CNN
+F 2 "" H 2250 4350 50  0001 C CNN
+F 3 "~" H 2250 4350 50  0001 C CNN
+	1    2250 4350
+	1    0    0    -1  
+$EndComp
+Connection ~ 2250 4350
 $EndSCHEMATC

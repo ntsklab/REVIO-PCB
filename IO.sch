@@ -153,19 +153,6 @@ Wire Wire Line
 	5600 1550 5600 1650
 Wire Wire Line
 	5500 1550 5500 1750
-$Comp
-L Switch:SW_Push TEST1
-U 1 1 6051A723
-P 3700 6150
-F 0 "TEST1" H 3700 6435 50  0000 C CNN
-F 1 "SW_Push" H 3700 6344 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" H 3700 6350 50  0001 C CNN
-F 3 "~" H 3700 6350 50  0001 C CNN
-	1    3700 6150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3500 6150 3500 5750
 Wire Wire Line
 	3500 4700 4700 4700
 $Comp
@@ -238,7 +225,7 @@ L Connector_Generic:Conn_01x03 CN2
 U 1 1 60565F54
 P 5600 1350
 F 0 "CN2" V 5564 1162 50  0000 R CNN
-F 1 "XH Nu1.1_UART2_Control" V 5473 1162 50  0000 R CNN
+F 1 "Nu UART2 Ctrl" V 5473 1162 50  0000 R CNN
 F 2 "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical" H 5600 1350 50  0001 C CNN
 F 3 "~" H 5600 1350 50  0001 C CNN
 	1    5600 1350
@@ -288,8 +275,6 @@ Wire Wire Line
 Wire Wire Line
 	2450 5800 3900 5800
 Wire Wire Line
-	3900 6150 3900 5800
-Wire Wire Line
 	2450 5800 2450 4350
 Wire Wire Line
 	2450 4350 2350 4350
@@ -328,10 +313,10 @@ Wire Wire Line
 	6200 5850 6200 5550
 Connection ~ 6200 5550
 $Comp
-L Device:R OP_R1
+L Device:R OP_R3
 U 1 1 605A3865
 P 7950 4350
-F 0 "OP_R1" V 7743 4350 50  0000 C CNN
+F 0 "OP_R3" V 7743 4350 50  0000 C CNN
 F 1 "10k" V 7834 4350 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7880 4350 50  0001 C CNN
 F 3 "~" H 7950 4350 50  0001 C CNN
@@ -388,7 +373,7 @@ L Connector_Generic:Conn_01x03 OP_CN3
 U 1 1 605C908B
 P 6950 1350
 F 0 "OP_CN3" V 6914 1162 50  0000 R CNN
-F 1 "XH Nu1.1_UART1_LED" V 6823 1162 50  0000 R CNN
+F 1 "Nu UART1 LED" V 6823 1162 50  0000 R CNN
 F 2 "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical" H 6950 1350 50  0001 C CNN
 F 3 "~" H 6950 1350 50  0001 C CNN
 	1    6950 1350
@@ -406,10 +391,10 @@ Wire Wire Line
 Wire Wire Line
 	5550 2500 6950 2500
 $Comp
-L Device:R OP_R2
+L Device:R OP_R4
 U 1 1 605F89D0
 P 7300 3750
-F 0 "OP_R2" V 7093 3750 50  0000 C CNN
+F 0 "OP_R4" V 7093 3750 50  0000 C CNN
 F 1 "1k" V 7184 3750 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7230 3750 50  0001 C CNN
 F 3 "~" H 7300 3750 50  0001 C CNN
@@ -417,11 +402,11 @@ F 3 "~" H 7300 3750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:LED OP_LED1
+L Device:LED OP_LED2
 U 1 1 605F9B8C
 P 7850 3750
-F 0 "OP_LED1" H 7843 3495 50  0000 C CNN
-F 1 "WorkLEDControl" H 7843 3586 50  0000 C CNN
+F 0 "OP_LED2" H 7843 3495 50  0000 C CNN
+F 1 "WorkLEDCtrl" H 7843 3586 50  0000 C CNN
 F 2 "LED_THT:LED_D3.0mm" H 7850 3750 50  0001 C CNN
 F 3 "~" H 7850 3750 50  0001 C CNN
 	1    7850 3750
@@ -514,8 +499,6 @@ F 3 "" H 3850 5550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4000 5450 3850 5450
-Wire Wire Line
-	3850 5450 3850 5550
 $Comp
 L power:GND #PWR0102
 U 1 1 606677BA
@@ -532,10 +515,10 @@ Wire Wire Line
 Wire Wire Line
 	4000 4900 4000 5350
 $Comp
-L Connector_Generic:Conn_01x06 OP_ISP1
+L Connector_Generic:Conn_01x06 OP_ISP2
 U 1 1 606749DB
 P 9650 3950
-F 0 "OP_ISP1" H 9730 3942 50  0000 L CNN
+F 0 "OP_ISP2" H 9730 3942 50  0000 L CNN
 F 1 "Conn_01x06" H 9730 3851 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 9650 3950 50  0001 C CNN
 F 3 "~" H 9650 3950 50  0001 C CNN
@@ -580,7 +563,7 @@ L Connector_Generic:Conn_02x11_Odd_Even OP_CN5
 U 1 1 605C4009
 P 9100 1950
 F 0 "OP_CN5" H 9150 2667 50  0000 C CNN
-F 1 "XAD CIRCLINK_LED_Interrupt" H 9150 2576 50  0000 C CNN
+F 1 "CIRCLINK_LED_INT" H 9150 2576 50  0000 C CNN
 F 2 "footprint:JST_XAD_B22B-XADSS-N_2x11_P2.50mm_Vertical" H 9100 1950 50  0001 C CNN
 F 3 "~" H 9100 1950 50  0001 C CNN
 	1    9100 1950
@@ -664,7 +647,7 @@ L Connector_Generic:Conn_01x03 OP_CN4
 U 1 1 60649EE3
 P 10250 1900
 F 0 "OP_CN4" V 10214 1712 50  0000 R CNN
-F 1 "XH Nu1.1_UART3_AimeThrough" V 10123 1712 50  0000 R CNN
+F 1 "Nu UART3 Aime(Thr)" V 10123 1712 50  0000 R CNN
 F 2 "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical" H 10250 1900 50  0001 C CNN
 F 3 "~" H 10250 1900 50  0001 C CNN
 	1    10250 1900
@@ -689,58 +672,282 @@ Wire Wire Line
 Wire Wire Line
 	10350 2800 10350 2100
 $Comp
-L Mechanical:MountingHole H1
-U 1 1 60664363
-P 2550 1650
-F 0 "H1" H 2650 1696 50  0000 L CNN
-F 1 "MountingHole" H 2650 1605 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 2550 1650 50  0001 C CNN
-F 3 "~" H 2550 1650 50  0001 C CNN
-	1    2550 1650
-	1    0    0    -1  
+L MCU_Microchip_ATmega:ATmega328P-PU OP_U1
+U 1 1 6069A833
+P 3400 6950
+F 0 "OP_U1" V 3446 5406 50  0000 R CNN
+F 1 "ATmega328P-PU" V 3355 5406 50  0000 R CNN
+F 2 "Package_DIP:DIP-28_W7.62mm" H 3400 6950 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 3400 6950 50  0001 C CNN
+	1    3400 6950
+	0    -1   -1   0   
 $EndComp
 $Comp
-L Mechanical:MountingHole H2
-U 1 1 60664EDB
-P 2600 1900
-F 0 "H2" H 2700 1946 50  0000 L CNN
-F 1 "MountingHole" H 2700 1855 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 2600 1900 50  0001 C CNN
-F 3 "~" H 2600 1900 50  0001 C CNN
-	1    2600 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H3
-U 1 1 606655D5
-P 2300 2150
-F 0 "H3" H 2400 2196 50  0000 L CNN
-F 1 "MountingHole" H 2400 2105 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 2300 2150 50  0001 C CNN
-F 3 "~" H 2300 2150 50  0001 C CNN
-	1    2300 2150
+L Mechanical:MountingHole Logo1
+U 1 1 60689EAD
+P 1500 1800
+F 0 "Logo1" H 1600 1846 50  0000 L CNN
+F 1 "Logo" H 1600 1755 50  0000 L CNN
+F 2 "logos:revio" H 1500 1800 50  0001 C CNN
+F 3 "~" H 1500 1800 50  0001 C CNN
+	1    1500 1800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H4
 U 1 1 606655DB
-P 2350 2400
-F 0 "H4" H 2450 2446 50  0000 L CNN
-F 1 "MountingHole" H 2450 2355 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 2350 2400 50  0001 C CNN
-F 3 "~" H 2350 2400 50  0001 C CNN
-	1    2350 2400
+P 1500 1600
+F 0 "H4" H 1600 1646 50  0000 L CNN
+F 1 "MountingHole" H 1600 1555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1500 1600 50  0001 C CNN
+F 3 "~" H 1500 1600 50  0001 C CNN
+	1    1500 1600
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole Logo1
-U 1 1 60689EAD
-P 2250 2750
-F 0 "Logo1" H 2350 2796 50  0000 L CNN
-F 1 "Logo" H 2350 2705 50  0000 L CNN
-F 2 "logos:revio" H 2250 2750 50  0001 C CNN
-F 3 "~" H 2250 2750 50  0001 C CNN
-	1    2250 2750
+L Mechanical:MountingHole H3
+U 1 1 606655D5
+P 1500 1400
+F 0 "H3" H 1600 1446 50  0000 L CNN
+F 1 "MountingHole" H 1600 1355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1500 1400 50  0001 C CNN
+F 3 "~" H 1500 1400 50  0001 C CNN
+	1    1500 1400
 	1    0    0    -1  
 $EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 60664EDB
+P 1500 1200
+F 0 "H2" H 1600 1246 50  0000 L CNN
+F 1 "MountingHole" H 1600 1155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1500 1200 50  0001 C CNN
+F 3 "~" H 1500 1200 50  0001 C CNN
+	1    1500 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 60664363
+P 1500 1000
+F 0 "H1" H 1600 1046 50  0000 L CNN
+F 1 "MountingHole" H 1600 955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1500 1000 50  0001 C CNN
+F 3 "~" H 1500 1000 50  0001 C CNN
+	1    1500 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 606E3AF9
+P 4950 7100
+F 0 "#PWR0104" H 4950 6850 50  0001 C CNN
+F 1 "GND" H 4955 6927 50  0000 C CNN
+F 2 "" H 4950 7100 50  0001 C CNN
+F 3 "" H 4950 7100 50  0001 C CNN
+	1    4950 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 6950 4950 6950
+Wire Wire Line
+	4950 6950 4950 7100
+Wire Wire Line
+	5100 6600 4950 6600
+Wire Wire Line
+	4950 6600 4950 6950
+Connection ~ 4950 6950
+$Comp
+L power:+5V #PWR0105
+U 1 1 60701BE0
+P 1550 6400
+F 0 "#PWR0105" H 1550 6250 50  0001 C CNN
+F 1 "+5V" H 1565 6573 50  0000 C CNN
+F 2 "" H 1550 6400 50  0001 C CNN
+F 3 "" H 1550 6400 50  0001 C CNN
+	1    1550 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 7550 1900 7550
+Wire Wire Line
+	1900 7550 1900 6950
+Wire Wire Line
+	1900 6850 1550 6850
+Wire Wire Line
+	1550 6850 1550 6400
+Wire Wire Line
+	1900 6850 1900 6950
+Connection ~ 1900 6850
+Connection ~ 1900 6950
+$Comp
+L Device:R OP_R1
+U 1 1 60717867
+P 3550 6250
+F 0 "OP_R1" V 3343 6250 50  0000 C CNN
+F 1 "10k" V 3434 6250 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3480 6250 50  0001 C CNN
+F 3 "~" H 3550 6250 50  0001 C CNN
+	1    3550 6250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3400 6250 1900 6250
+Wire Wire Line
+	1900 6250 1900 6850
+Wire Wire Line
+	3700 6250 3700 6350
+Wire Wire Line
+	5100 6100 4050 6100
+Wire Wire Line
+	4050 6100 4050 6200
+Wire Wire Line
+	4050 6200 2600 6200
+Wire Wire Line
+	2600 6200 2600 6350
+$Comp
+L power:+5V #PWR0106
+U 1 1 60731974
+P 5050 6050
+F 0 "#PWR0106" H 5050 5900 50  0001 C CNN
+F 1 "+5V" H 5065 6223 50  0000 C CNN
+F 2 "" H 5050 6050 50  0001 C CNN
+F 3 "" H 5050 6050 50  0001 C CNN
+	1    5050 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 6200 5050 6200
+Wire Wire Line
+	5050 6200 5050 6050
+Wire Wire Line
+	2700 6300 2700 6350
+Wire Wire Line
+	2700 6300 5100 6300
+$Comp
+L Connector_Generic:Conn_01x06 OP_ISP1
+U 1 1 606F8AF0
+P 5300 6300
+F 0 "OP_ISP1" H 5380 6292 50  0000 L CNN
+F 1 "Conn_01x06" H 5380 6201 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 5300 6300 50  0001 C CNN
+F 3 "~" H 5300 6300 50  0001 C CNN
+	1    5300 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 6400 4900 6400
+Wire Wire Line
+	4900 6400 4900 6500
+Wire Wire Line
+	4900 6500 2500 6500
+Wire Wire Line
+	2500 6350 2500 6500
+Wire Wire Line
+	5100 6500 5000 6500
+Wire Wire Line
+	5000 6500 5000 6550
+Wire Wire Line
+	5000 6550 3700 6550
+Wire Wire Line
+	3700 6550 3700 6350
+Connection ~ 3700 6350
+Wire Wire Line
+	3500 6150 3500 6100
+Wire Wire Line
+	3500 6150 2500 6150
+Wire Wire Line
+	2500 6150 2500 6200
+Wire Wire Line
+	2500 6200 2300 6200
+Wire Wire Line
+	2300 6200 2300 6350
+Wire Wire Line
+	3900 6350 3950 6350
+Wire Wire Line
+	3950 6350 3950 5600
+Wire Wire Line
+	3950 5600 5600 5600
+Wire Wire Line
+	5600 5600 5600 4850
+Connection ~ 5600 4850
+Wire Wire Line
+	4000 6350 4000 5550
+Wire Wire Line
+	4000 5550 5500 5550
+Wire Wire Line
+	5500 5550 5500 4850
+Connection ~ 5500 4850
+$Comp
+L Device:R OP_R2
+U 1 1 607A2B07
+P 2650 5400
+F 0 "OP_R2" H 2720 5446 50  0000 L CNN
+F 1 "1k" H 2720 5355 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2580 5400 50  0001 C CNN
+F 3 "~" H 2650 5400 50  0001 C CNN
+	1    2650 5400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED OP_LED1
+U 1 1 607A3331
+P 2950 5400
+F 0 "OP_LED1" V 2989 5282 50  0000 R CNN
+F 1 "WorkCtrl" V 2898 5282 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 2950 5400 50  0001 C CNN
+F 3 "~" H 2950 5400 50  0001 C CNN
+	1    2950 5400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4100 6350 4100 5900
+Wire Wire Line
+	4100 5900 2500 5900
+Wire Wire Line
+	2500 5900 2500 5400
+Wire Wire Line
+	3100 5400 3850 5400
+Wire Wire Line
+	3850 5400 3850 5450
+Connection ~ 3850 5450
+Wire Wire Line
+	3850 5450 3850 5550
+$Comp
+L Switch:SW_MEC_5E TEST_SW1
+U 1 1 607E4C84
+P 3700 6100
+F 0 "TEST_SW1" H 3700 6485 50  0000 C CNN
+F 1 "SW_MEC_5E" H 3700 6394 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" H 3700 6400 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 3700 6400 50  0001 C CNN
+	1    3700 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 6000 3500 5750
+Wire Wire Line
+	3900 6000 3900 5800
+Wire Wire Line
+	3900 6100 3900 6000
+Connection ~ 3900 6000
+Wire Wire Line
+	3500 6100 3500 6000
+Connection ~ 3500 6100
+Connection ~ 3500 6000
+NoConn ~ 2200 6350
+NoConn ~ 2400 6350
+NoConn ~ 2800 6350
+NoConn ~ 2900 6350
+NoConn ~ 3100 6350
+NoConn ~ 3200 6350
+NoConn ~ 3300 6350
+NoConn ~ 3400 6350
+NoConn ~ 3500 6350
+NoConn ~ 3600 6350
+NoConn ~ 4200 6350
+NoConn ~ 4300 6350
+NoConn ~ 4400 6350
+NoConn ~ 4500 6350
+NoConn ~ 4600 6350
 $EndSCHEMATC

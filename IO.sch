@@ -150,9 +150,9 @@ Connection ~ 3850 3350
 Wire Wire Line
 	5700 1550 5700 2300
 Wire Wire Line
-	5600 1550 5600 2400
+	5600 1550 5600 1650
 Wire Wire Line
-	5500 1550 5500 2150
+	5500 1550 5500 1750
 $Comp
 L Switch:SW_Push TEST1
 U 1 1 6051A723
@@ -395,14 +395,8 @@ F 3 "~" H 6950 1350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5150 2550 5150 2000
-Wire Wire Line
-	7050 2000 7050 1550
-Wire Wire Line
 	5550 2550 5550 2500
 Connection ~ 6250 1850
-Wire Wire Line
-	5150 2000 7050 2000
 Wire Wire Line
 	6850 1850 6850 1550
 Wire Wire Line
@@ -581,4 +575,172 @@ Wire Wire Line
 Connection ~ 9300 4250
 Wire Wire Line
 	9300 3750 9300 4250
+$Comp
+L Connector_Generic:Conn_02x11_Odd_Even OP_CN5
+U 1 1 605C4009
+P 9100 1950
+F 0 "OP_CN5" H 9150 2667 50  0000 C CNN
+F 1 "XAD CIRCLINK_LED_Interrupt" H 9150 2576 50  0000 C CNN
+F 2 "footprint:JST_XAD_B22B-XADSS-N_2x11_P2.50mm_Vertical" H 9100 1950 50  0001 C CNN
+F 3 "~" H 9100 1950 50  0001 C CNN
+	1    9100 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 1550 6400 1550
+Wire Wire Line
+	6400 1550 6400 1700
+Wire Wire Line
+	6400 1700 8000 1700
+Wire Wire Line
+	8000 1700 8000 1550
+Wire Wire Line
+	8000 1550 8900 1550
+Connection ~ 5700 1550
+Wire Wire Line
+	5600 1650 8900 1650
+Connection ~ 5600 1650
+Wire Wire Line
+	5600 1650 5600 2400
+Wire Wire Line
+	5500 1750 8750 1750
+Wire Wire Line
+	8750 1750 8750 1850
+Wire Wire Line
+	8750 1850 8900 1850
+Connection ~ 5500 1750
+Wire Wire Line
+	5500 1750 5500 2150
+Wire Wire Line
+	7050 1550 7050 2650
+Wire Wire Line
+	7050 2650 9750 2650
+Wire Wire Line
+	9750 2650 9750 1550
+Wire Wire Line
+	9750 1550 9400 1550
+Wire Wire Line
+	5150 2550 5150 2400
+Wire Wire Line
+	5150 2400 5500 2400
+Wire Wire Line
+	5500 2400 5500 2450
+Wire Wire Line
+	5500 2450 8300 2450
+Wire Wire Line
+	8300 2450 8300 2600
+Wire Wire Line
+	8300 2600 9550 2600
+Wire Wire Line
+	9550 2600 9550 1650
+Wire Wire Line
+	9550 1650 9400 1650
+Wire Wire Line
+	6850 1850 8400 1850
+Wire Wire Line
+	8400 1850 8400 1100
+Wire Wire Line
+	8400 1100 9900 1100
+Wire Wire Line
+	9900 1100 9900 1850
+Wire Wire Line
+	9900 1850 9400 1850
+Connection ~ 6850 1850
+NoConn ~ 8900 1450
+NoConn ~ 9400 1450
+NoConn ~ 8900 1750
+NoConn ~ 9400 1750
+NoConn ~ 8900 1950
+NoConn ~ 8900 2050
+NoConn ~ 8900 2150
+NoConn ~ 8900 2250
+NoConn ~ 9400 2450
+NoConn ~ 9400 2250
+NoConn ~ 9400 2150
+NoConn ~ 9400 2050
+NoConn ~ 9400 1950
+$Comp
+L Connector_Generic:Conn_01x03 OP_CN4
+U 1 1 60649EE3
+P 10250 1900
+F 0 "OP_CN4" V 10214 1712 50  0000 R CNN
+F 1 "XH Nu1.1_UART3_AimeThrough" V 10123 1712 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical" H 10250 1900 50  0001 C CNN
+F 3 "~" H 10250 1900 50  0001 C CNN
+	1    10250 1900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8900 2350 8800 2350
+Wire Wire Line
+	8800 2350 8800 2750
+Wire Wire Line
+	8800 2750 10150 2750
+Wire Wire Line
+	10150 2750 10150 2100
+Wire Wire Line
+	9400 2350 10250 2350
+Wire Wire Line
+	10250 2350 10250 2100
+Wire Wire Line
+	8900 2450 8900 2800
+Wire Wire Line
+	8900 2800 10350 2800
+Wire Wire Line
+	10350 2800 10350 2100
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 60664363
+P 2550 1650
+F 0 "H1" H 2650 1696 50  0000 L CNN
+F 1 "MountingHole" H 2650 1605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2550 1650 50  0001 C CNN
+F 3 "~" H 2550 1650 50  0001 C CNN
+	1    2550 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 60664EDB
+P 2600 1900
+F 0 "H2" H 2700 1946 50  0000 L CNN
+F 1 "MountingHole" H 2700 1855 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2600 1900 50  0001 C CNN
+F 3 "~" H 2600 1900 50  0001 C CNN
+	1    2600 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 606655D5
+P 2300 2150
+F 0 "H3" H 2400 2196 50  0000 L CNN
+F 1 "MountingHole" H 2400 2105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2300 2150 50  0001 C CNN
+F 3 "~" H 2300 2150 50  0001 C CNN
+	1    2300 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 606655DB
+P 2350 2400
+F 0 "H4" H 2450 2446 50  0000 L CNN
+F 1 "MountingHole" H 2450 2355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2350 2400 50  0001 C CNN
+F 3 "~" H 2350 2400 50  0001 C CNN
+	1    2350 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole Logo1
+U 1 1 60689EAD
+P 2250 2750
+F 0 "Logo1" H 2350 2796 50  0000 L CNN
+F 1 "Logo" H 2350 2705 50  0000 L CNN
+F 2 "logos:revio" H 2250 2750 50  0001 C CNN
+F 3 "~" H 2250 2750 50  0001 C CNN
+	1    2250 2750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -3,3 +3,4 @@ fp-info-cache
 *.kicad_pcb-bak
 IO-cache.lib
 *.sch-bak
+IO-backups/*
